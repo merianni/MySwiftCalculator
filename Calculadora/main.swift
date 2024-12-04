@@ -28,7 +28,7 @@ func getInput() -> Double {
     return Double(readLine()!)!
 }
 
-func calculate(_ operation: String, number1: Double, number2: Double) -> String {
+func calculate(operation: String, number1: Double, number2: Double) -> String {
     var result: Double
     switch operation {
     case "+":
@@ -55,7 +55,7 @@ while true {
     let operation = readLine()!
     let number1 = getInput()
     let number2 = getInput()
-    let result = calculate(operation, number1: number1, number2: number2)
+    let result = calculate(operation: operation, number1: number1, number2: number2)
     print(result)
     
     print("""
