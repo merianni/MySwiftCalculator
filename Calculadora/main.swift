@@ -44,7 +44,7 @@ func calculate(_ operation: String, number1: Double, number2: Double) -> String 
         }
         result = number1 / number2
     default:
-        return "Invalid operation"
+        return "ERROR: Invalid Operation"
     }
     return "\(number1) \(operation) \(number2) = \(result)"
 }
